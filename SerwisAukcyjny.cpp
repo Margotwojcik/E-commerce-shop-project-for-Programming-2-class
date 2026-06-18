@@ -118,7 +118,8 @@ void SerwisAukcyjny::DodajWlasnaOferte() {
 
     std::string tytul;
     std::cout << "Tytul: ";
-    std::getline(std::cin, tytul);
+    while (std::getline(std::cin, tytul) && tytul.empty()) {
+   }
 
     double cena;
     std::cout << "Cena (PLN): ";
